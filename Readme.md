@@ -119,8 +119,8 @@ Install XRDP
 ```sh
 sudo apt install xrdp
 
-#Enable to ensure start at boot u
-sudo  systemctl enable xrdp p
+#Enable to ensure start at boot up
+sudo  systemctl enable xrdp
 
 #check status
 sudo  systemctl status xrdp
@@ -410,7 +410,7 @@ crontab -e
 ```
 - Paste to the cron table
 ```sh
-00 17 * * 5 /root/scripts/backup_conf.sh
+00 17 * * 5 script/backup_conf.sh
 ```
 
 
