@@ -61,8 +61,8 @@ Ubuntu virtual machines for the workstation and server were setup in a type-2 Vi
 Download the latest ubuntu desktop image (.iso) file [here](https://ubuntu.com/download/desktop). Open virtualbox, choose "NEW" icon to create new VM. Select the file location of the image file as shown below. Allocate considerable disk space, storage and CPU capacity. In my case 2541MB RAM, 2 CPU, and 40GB storage space.
 
 <div style="display: flex;">
-  <img src="install-1.png" alt="Image" style="width: 40%; margin-right: 5%;"">
-  <img src="install-2.png" alt="Image 1" style="width: 40%;">
+  <img src="images/install-1.png" alt="Image" style="width: 40%; margin-right: 5%;"">
+  <img src="images/install-2.png" alt="Image 1" style="width: 40%;">
 </div>
 
 Once installation is complete, enter your login details at the prompt.
@@ -193,7 +193,7 @@ Modify the isc-dhcp-server default file:
 ```sh
 sudo nano /etc/default/isc-dhcp-server
 ```
-![alt text](isc-dhcp.png)
+![isc-dhcp image](images/isc-dhcp.png)
 
 Modify the dhcpd config file:
 ```sh
@@ -254,7 +254,7 @@ Modify the configuration file as shown:
 ```sh
 forwarders {
    8.8.8.8;
-   8.8.4.4.; 
+   8.8.4.4; 
 };
 
 #allows to listen for DNS queries on all available network interfaces and IP addresses
@@ -356,9 +356,9 @@ To create a backup of configuration files on a partition located on a seperate d
 - Click on the "Controller: SATA"
 - Click disk icon to add a new disk
 - Choose "create a virtual hard disk"
-![alt text](vdi.png)
+![vdi](images/vdi.png)
 - Allocate a new partition volume
-![alt text](partition.png)
+![partition](images/partition.png)
 - Select your new volume and click on "Choose"
 - New volume create and attached sucessfully
 
